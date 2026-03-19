@@ -8,10 +8,10 @@ const router = createBrowserRouter([
     path: "/",
     element: <HomeLayout></HomeLayout>,
     children: [
-      // {
-      //   path: "",
-      //   Component: Home,
-      // },
+      {
+        path: "",
+        Component: Home,
+      },
       {
         path: "/category/:id",
         Component: CategoryNews,

@@ -14,6 +14,7 @@ const HomeLayout = () => {
         <LatestNews></LatestNews>
         <Navbar></Navbar>
       </header>
+
       <main className="max-w-10/12 mx-auto grid grid-cols-12 gap-4">
         {/* left-navbar  */}
         <section className="col-span-3">

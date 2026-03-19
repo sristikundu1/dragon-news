@@ -24,6 +24,78 @@
     "production": true
   },
   {
+  "id": "bcdefa0123456789bcdefa10",
+  "category_id": 10,
+  "title": "Healthy Lifestyle Trends Becoming Popular Among Young People",
+  "rating": {
+    "number": 4,
+    "badge": "trending"
+  },
+  "total_view": 3456,
+  "author": {
+    "name": "Nusrat Jahan",
+    "published_date": "2025-04-23T10:30:00.000Z",
+    "img": "https://randomuser.me/api/portraits/women/45.jpg"
+  },
+  "thumbnail_url": "https://images.pexels.com/photos/3768916/pexels-photo-3768916.jpeg",
+  "image_url": "https://images.pexels.com/photos/3768916/pexels-photo-3768916.jpeg",
+  "details": "Healthy lifestyle habits such as regular exercise, balanced diet, and meditation are becoming increasingly popular among young people. Experts say social media awareness and fitness influencers play a big role in encouraging people to live healthier lives.",
+  "tags": ["lifestyle", "health", "fitness"],
+  "others": {
+    "is_today_pick": false,
+    "is_trending": true
+  },
+  "production": true
+},
+{
+  "id": "bcdefa0123456789bcdefa11",
+  "category_id": 10,
+  "title": "Minimalist Living: Why People Are Choosing Simple Life",
+  "rating": {
+    "number": 5,
+    "badge": "popular"
+  },
+  "total_view": 5123,
+  "author": {
+    "name": "Rakib Hasan",
+    "published_date": "2025-04-23T12:00:00.000Z",
+    "img": "https://randomuser.me/api/portraits/men/32.jpg"
+  },
+  "thumbnail_url": "https://www.becomingminimalist.com/wp-content/uploads/2024/08/simple-life-forward.jpg",
+  "image_url": "https://www.becomingminimalist.com/wp-content/uploads/2024/08/simple-life-forward.jpg",
+  "details": "Minimalist lifestyle is gaining popularity worldwide. People are choosing to live with fewer things to reduce stress and focus on what truly matters. Experts say this lifestyle improves mental health and financial stability.",
+  "tags": ["lifestyle", "minimal", "life"],
+  "others": {
+    "is_today_pick": true,
+    "is_trending": false
+  },
+  "production": true
+},
+{
+  "id": "bcdefa0123456789bcdefa12",
+  "category_id": 10,
+  "title": "Travel Lifestyle: Remote Work Allows People To Explore World",
+  "rating": {
+    "number": 4,
+    "badge": "trending"
+  },
+  "total_view": 2890,
+  "author": {
+    "name": "Sabbir Rahman",
+    "published_date": "2025-04-23T15:20:00.000Z",
+    "img": "https://randomuser.me/api/portraits/men/41.jpg"
+  },
+  "thumbnail_url": "https://windowstill.com/wp-content/uploads/2023/04/remote-work-2021-08-28-07-01-54-utc-scaled.jpg",
+  "image_url": "https://windowstill.com/wp-content/uploads/2023/04/remote-work-2021-08-28-07-01-54-utc-scaled.jpg",
+  "details": "Remote jobs and freelancing have made travel lifestyle easier than ever. Many young professionals are working from different countries while exploring new cultures and experiences.",
+  "tags": ["lifestyle", "travel", "remote"],
+  "others": {
+    "is_today_pick": false,
+    "is_trending": true
+  },
+  "production": true
+},
+  {
     "id": "23456789abcdef0123456789",
     "category_id": 2,
     "title": "Central Bank Announces New Monetary Policy to Control Inflation",
