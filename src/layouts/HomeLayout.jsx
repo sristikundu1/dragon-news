@@ -8,8 +8,8 @@ import RightAside from "../components/RightAside/RightAside";
 
 const HomeLayout = () => {
   return (
-    <div>
-      <header>
+    <div className="bg-white">
+      <header className="mb-10">
         <Header></Header>
         <LatestNews></LatestNews>
         <Navbar></Navbar>

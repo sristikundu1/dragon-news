@@ -2,6 +2,8 @@ import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import FindUs from "./findUs";
+import Qzone from "./Qzone";
+import ad from "../../assets/bg.png";
 
 const RightAside = () => {
   return (
@@ -23,6 +25,12 @@ const RightAside = () => {
       </div>
 
       <FindUs></FindUs>
+
+      <Qzone></Qzone>
+
+      <div className="w-full mt-4">
+        <img className="w-full" src={ad} alt="background-image" />
+      </div>
     </div>
   );
 };
