@@ -5,7 +5,7 @@ import FindUs from "./findUs";
 import Qzone from "./Qzone";
 import ad from "../../assets/bg.png";
 
-const RightAside = () => {
+const RightAside = ({ showAd = true }) => {
   return (
     <div>
       <h2 className="text-dark font-semibold mb-3">Login With</h2>
@@ -28,9 +28,11 @@ const RightAside = () => {
 
       <Qzone></Qzone>
 
-      <div className="w-full mt-4">
-        <img className="w-full" src={ad} alt="background-image" />
-      </div>
+      {showAd && (
+        <div className="w-full mt-4">
+          <img className="w-full" src={ad} alt="background-image" />
+        </div>
+      )}
     </div>
   );
 };

@@ -1,12 +1,11 @@
 import React from "react";
-import { Outlet } from "react-router";
 import Header from "../components/Header/Header";
 import LatestNews from "../components/LatestNews/LatestNews";
 import Navbar from "../components/Navbar/Navbar";
-import LeftAside from "../components/LeftAside/LeftAside";
+import { Outlet } from "react-router";
 import RightAside from "../components/RightAside/RightAside";
 
-const HomeLayout = () => {
+const NewsDetailsLayout = () => {
   return (
     <div className="bg-white">
       <header className="mb-10">
@@ -15,23 +14,16 @@ const HomeLayout = () => {
         <Navbar></Navbar>
       </header>
 
-      <main className="max-w-10/12 mx-auto grid grid-cols-12 gap-4">
-        {/* left-navbar  */}
-        <section className="col-span-3">
-          <aside className="sticky  top-0  h-fit">
-            <LeftAside></LeftAside>
-          </aside>
-        </section>
-
-        {/* main section  */}
-        <section className="col-span-6">
+      <main className="max-w-10/12 mx-auto grid grid-cols-12 gap-4 pb-10">
+        {/* details section  */}
+        <section className="col-span-9 sticky top-0 h-fit">
           <Outlet></Outlet>
         </section>
 
         {/* right navbar  */}
         <section className="col-span-3">
           <aside className=" sticky  top-0  h-fit">
-            <RightAside showAd={true}></RightAside>
+            <RightAside showAd={false}></RightAside>
           </aside>
         </section>
       </main>
@@ -39,4 +31,4 @@ const HomeLayout = () => {
   );
 };
 
-export default HomeLayout;
+export default NewsDetailsLayout;

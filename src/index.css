@@ -23,5 +23,5 @@
 }
 
 a.active {
-  @apply bg-base-200;
+  @apply bg-[#E7E7E7];
 }

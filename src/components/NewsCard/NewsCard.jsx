@@ -3,9 +3,11 @@ import React from "react";
 import { FaStar, FaEye } from "react-icons/fa";
 import { HiOutlineBookmark } from "react-icons/hi";
 import { IoShareSocialOutline } from "react-icons/io5";
+import { Link } from "react-router";
 
 const NewsCard = ({ news }) => {
-  const { author, title, thumbnail_url, rating, details, total_view } = news;
+  const { id, author, title, thumbnail_url, rating, details, total_view } =
+    news;
   return (
     <div>
       <div className="bg-white rounded-xl shadow-md overflow-hidden mb-8">
@@ -45,20 +47,26 @@ const NewsCard = ({ news }) => {
         {/* details */}
         <div className="p-4 text-accent text-sm font-bold">
           {details.slice(0, 150)}...
-          <span className="text-secondary font-semibold cursor-pointer ml-1">
-            Read More
-          </span>
+          <Link to={`/news/${id}`}>
+            <span className="text-secondary font-semibold cursor-pointer ml-1">
+              Read More
+            </span>
+          </Link>
         </div>
 
         {/* footer */}
         <div className="flex items-center justify-between p-4 border-t border-[rgba(231,231,231,1)]">
           {/* rating */}
-          <div className="flex items-center gap-2 text-orange-400">
-            <FaStar />
-            <FaStar />
-            <FaStar />
-            <FaStar />
-            <FaStar className="text-gray-300" />
+
+          <div className="flex items-center gap-1">
+            {Array.from({ length: 5 }).map((_, index) => (
+              <FaStar
+                key={index}
+                className={
+                  index < rating.number ? "text-orange-400" : "text-gray-300"
+                }
+              />
+            ))}
 
             <span className="text-[rgba(112,111,111,1)] font-medium  ml-2">
               {rating.number}
