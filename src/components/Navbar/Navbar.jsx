@@ -13,7 +13,7 @@ const Navbar = () => {
       </div>
 
       {/* button  */}
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-4">
         <img className="w-10 h-10" src={user} alt="user" />
         <button className="btn bg-primary text-white px-8 py-2 font-semibold">
           Login
