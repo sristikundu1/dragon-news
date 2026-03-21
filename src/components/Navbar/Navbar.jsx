@@ -28,9 +28,30 @@ const Navbar = () => {
       <div></div>
       {/* links  */}
       <div className="flex items-center gap-3 text-accent text-lg">
-        <NavLink to={"/"}>Home</NavLink>
-        <NavLink to={"/about"}>About</NavLink>
-        <NavLink to={"/career"}>Career</NavLink>
+        <NavLink
+          to={"/"}
+          className={({ isActive }) =>
+            isActive ? "underline font-bold" : "text-gray-700"
+          }
+        >
+          Home
+        </NavLink>
+        <NavLink
+          to={"/about"}
+          className={({ isActive }) =>
+            isActive ? "underline font-bold" : "text-gray-700"
+          }
+        >
+          About
+        </NavLink>
+        <NavLink
+          to={"/career"}
+          className={({ isActive }) =>
+            isActive ? "underline font-bold" : "text-gray-700"
+          }
+        >
+          Career
+        </NavLink>
       </div>
 
       {/* button  */}
