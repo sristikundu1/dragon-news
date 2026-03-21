@@ -16,7 +16,11 @@ const NewsDetails = () => {
     <div>
       <h2 className="text-dark font-semibold mb-3">Dragon News</h2>
       <div className="border-[rgba(231,231,231,1)] rounded-lg border p-6 ">
-        <img className="rounded-lg" src={thumbnail_url} alt="image" />
+        <img
+          className="rounded-lg w-full object-cover"
+          src={thumbnail_url}
+          alt="image"
+        />
         <h1 className="font-bold text-2xl leading-10 text-dark my-2">
           {title}
         </h1>

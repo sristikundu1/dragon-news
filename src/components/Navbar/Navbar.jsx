@@ -3,6 +3,7 @@ import userIcon from "../../assets/user.png";
 import { Link, NavLink } from "react-router";
 import { AuthContext } from "../../contexts/AuthContext";
 import Loading from "../../Pages/Loading/Loading";
+import toast from "react-hot-toast";
 const Navbar = () => {
   const { user, logOut, loading } = use(AuthContext);
 
@@ -14,7 +15,7 @@ const Navbar = () => {
     logOut()
       .then(() => {
         // Sign-out successful.
-        alert("Sign-out successful");
+        toast.error("log-out successful");
       })
       .catch((error) => {
         // An error happened.
@@ -23,7 +24,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex justify-between items-center max-w-10/12 mx-auto py-3">
+    <div className="flex justify-between items-center px-3 md:px-0 md:max-w-10/12 mx-auto py-3">
       <div></div>
       {/* links  */}
       <div className="flex items-center gap-3 text-accent text-lg">
@@ -36,7 +37,6 @@ const Navbar = () => {
       <div className="flex items-center gap-4">
         {user ? (
           <>
-            <h2>{user.displayName}</h2>
             <img
               className="w-10 h-10 rounded-full min-w-10 min-h-10 object-cover  shrink-0"
               src={user?.photoURL || userIcon}

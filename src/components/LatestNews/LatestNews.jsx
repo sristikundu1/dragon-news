@@ -3,7 +3,7 @@ import Marquee from "react-fast-marquee";
 
 const LatestNews = () => {
   return (
-    <div className="max-w-10/12 mx-auto">
+    <div className="px-3 md:px-0 md:max-w-10/12 mx-auto">
       <div className="flex items-center gap-2 bg-base-200 p-3">
         <button className="btn bg-secondary text-white font-normal px-5">
           Latest

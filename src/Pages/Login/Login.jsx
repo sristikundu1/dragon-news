@@ -1,6 +1,7 @@
 import React, { use, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router";
 import { AuthContext } from "../../contexts/AuthContext";
+import toast from "react-hot-toast";
 
 const Login = () => {
   const location = useLocation();
@@ -21,8 +22,9 @@ const Login = () => {
       .then((userCredential) => {
         // Signed up
         const user = userCredential.user;
+        toast.success("Successfully Registered!");
         navigate(`${location.state ? location.state : "/"}`);
-        // setUser(user);
+        setUser(user);
       })
       .catch((error) => {
         const errorCode = error.code;

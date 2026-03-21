@@ -2,6 +2,7 @@ import React, { use } from "react";
 import { Link, useNavigate } from "react-router";
 import { AuthContext } from "../../contexts/AuthContext";
 import { updateProfile } from "firebase/auth";
+import toast from "react-hot-toast";
 
 const Register = () => {
   const { createUser, updateUser, setUser } = use(AuthContext);
@@ -26,6 +27,7 @@ const Register = () => {
           .then(() => {
             setUser({ ...user, displayName: name, photoURL: photoUrl });
             navigate("/");
+            toast.success("Successfully Registered!");
           })
           .catch((error) => {
             alert(error);

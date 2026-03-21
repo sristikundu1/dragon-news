@@ -17,16 +17,16 @@ const HomeLayout = () => {
         <Navbar></Navbar>
       </header>
 
-      <main className="max-w-10/12 mx-auto grid grid-cols-12 gap-4">
+      <main className="px-3 md:px-0 md:max-w-10/12 mx-auto grid grid-cols-3 md:grid-cols-12 gap-4">
         {/* left-navbar  */}
-        <section className="col-span-3">
+        <section className="col-span-1 md:col-span-3">
           <aside className="sticky  top-0  h-fit">
             <LeftAside></LeftAside>
           </aside>
         </section>
 
         {/* main section  */}
-        <section className="col-span-6">
+        <section className="col-span-2 md:col-span-6">
           {state == "loading" ? <Loading></Loading> : <Outlet></Outlet>}
         </section>
 

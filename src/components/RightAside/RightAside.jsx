@@ -5,13 +5,17 @@ import FindUs from "./findUs";
 import Qzone from "./Qzone";
 import ad from "../../assets/bg.png";
 import { AuthContext } from "../../contexts/AuthContext";
+import toast from "react-hot-toast";
 
 const RightAside = ({ showAd = true }) => {
   const { googleSignIn } = use(AuthContext);
 
   const handleGoogleSignIn = () => {
     googleSignIn()
-      .then((result) => result.user)
+      .then((result) => {
+        result.user;
+        toast.success("Successfully login with google account!");
+      })
       .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;

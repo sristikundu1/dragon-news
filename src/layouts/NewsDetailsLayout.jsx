@@ -14,15 +14,15 @@ const NewsDetailsLayout = () => {
         <Navbar></Navbar>
       </header>
 
-      <main className="max-w-10/12 mx-auto grid grid-cols-12 gap-4 pb-10">
+      <main className="max-w-10/12 mx-auto grid grid-cols-1 md:grid-cols-12 gap-4 pb-10">
         {/* details section  */}
-        <section className="col-span-9 sticky top-0 h-fit">
+        <section className="col-span-1 md:col-span-9 md:sticky top-0 h-fit">
           <Outlet></Outlet>
         </section>
 
         {/* right navbar  */}
-        <section className="col-span-3">
-          <aside className=" sticky  top-0  h-fit">
+        <section className="col-span-1 md:col-span-3">
+          <aside className=" md:sticky  top-0  h-fit">
             <RightAside showAd={false}></RightAside>
           </aside>
         </section>
